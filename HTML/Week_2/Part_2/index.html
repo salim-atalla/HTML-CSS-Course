@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Part 2 content">
+    <title>Part 2</title>
+</head>
+<body>
+
+
+    <!-- ======= Semantic elements ======= -->
+    <!-- Important : Sementic elements are div's but they have an expression names. -->
+
+    <header>
+        <!-- Header of the page -->
+    </header>
+
+    <nav>
+        <!-- Navgation bar -->
+    </nav>
+
+    <section>
+        <!-- Sections in the page (Left section or right section ...etc.) -->
+
+        <section>
+
+            <figure>
+                <!-- To assemblate an image with its description -->
+                <img src="" alt="">
+                <figcaption>
+                    <!-- description or caption -->
+                </figcaption>
+            </figure>
+
+            <article>
+                <!-- Post 1 -->
+            </article>
+    
+            <article>
+                <!-- Post 2 -->
+            </article>
+        </section>
+
+        <aside>
+            <!-- Left colum (or nav bar at the side of the page) -->
+        </aside>
+    </section>
+
+
+    <footer>
+        <!-- Footer of the page -->
+    </footer>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+
+    <!-- Audio and video -->
+
+    <!-- 
+        More attributes for audio and video
+            autoplay
+            loop
+            muted
+            ...
+    -->
+
+    <audio src="" controls>
+        <!-- if there is more then one extention, then we delete src which in the tag and do source tags as below -->
+        <source src="">
+        <source src="">
+        <!-- If the browser does not support audio tags then this massage will appear -->
+        Your browser does not support audio tag
+    </audio>
+
+    <!-- Same things for video tag -->
+    <!-- For a video file we can add width or width and height if we need more control for the size of the video -->
+    <video src="" width="" height="" controls poster="">
+        <!-- if there is more then one extention, then we delete src which in the tag and do source tags as below -->
+        <source src="">
+        <source src="">
+        <!-- If the browser does not support audio tags then this massage will appear -->
+        Your browser does not support video tag
+
+        <!-- track => to add a translations or description ..  -->
+        <!-- 
+            Attributs
+            kind => type of the file (subtitles, description, ...)
+            srclang => language of the .vtt file
+            label => name of the file or the langage ...
+        -->
+        <track src="file_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="file_ar.vtt" kind="subtitles" srclang="ar" label="Arabic">
+    </video>
+
+        
+</body>
+</html>

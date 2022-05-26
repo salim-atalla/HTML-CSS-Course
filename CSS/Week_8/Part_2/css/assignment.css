@@ -1,0 +1,74 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* TODO: 1 */
+
+.todo1 div.main.red {
+    color: red;
+}
+
+/* --------------------------- */
+/* TODO: 2 */
+
+.todo2 .parent > .child:last-child {
+    color: red;
+}
+
+
+/* --------------------------- */
+/* TODO: 3 */
+
+.todo3 .parent > .baby:only-child {
+    color: red;
+}
+
+
+/* --------------------------- */
+/* TODO: 4 */
+
+.todo4 p:first-child ~ div[title]:not(.no-need) {
+    color: red;
+}
+
+
+
+/* --------------------------- */
+/* TODO: 5 */
+
+.todo5 div:nth-child(2) div {
+    color: red;
+}
+
+
+
+/* --------------------------- */
+/* TODO: 6 */
+
+.todo6 div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+}
+
+
+
+/* --------------------------- */
+/* TODO: 7 */
+
+.todo7 div:first-of-type div:nth-last-of-type(2) {
+    color: red;
+}
+
+
+/* --------------------------- */
+/* TODO: 8 */
+
+.todo8 div div ~ :not(:last-child):not(h3) {
+    color: red;
+}

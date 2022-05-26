@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* TODO: 1 */
+
+.todo1 div {
+    width: 305px;
+    height: 205px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgb(255, 50, 110);
+    color: rgb(0, 160, 255);
+
+    transform: rotate(5deg);
+
+    font-size: 40px;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.todo1 div::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 305px;
+    height: 205px;
+    background-color: rgb(0, 160, 255);
+    transform: rotate(-10deg);
+}
+
+.todo1 div::after {
+    content: "Elzero";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    transform: rotate(-5deg);
+
+    outline: 1px solid #ccc;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----------------------------------------------- */
+/* TODO: 2 */
+
+.todo2 div {
+
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    border-radius: 50%;
+
+    position: relative;
+    z-index: 1;
+}
+
+.todo2 div::before {
+    content: "";
+    width: 220px;
+    height: 220px;
+    border: 10px solid;
+    border-color: rgb(0, 160, 255);
+    border-right-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+
+    z-index: -2;
+}
+
+.todo2 div::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+    border-color: rgb(255, 50, 110);
+    border-left-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    z-index: -1;
+}
+
+/* ----------------------------------------------- */
+/* TODO: 3 */
+
+.todo3 div {
+
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    border-radius: 50%;
+
+    position: relative;
+    z-index: 1;
+}
+
+.todo3 div::before {
+    content: "";
+    width: 220px;
+    height: 220px;
+    border: 10px solid;
+    border-color: rgb(0, 160, 255);
+    border-right-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+
+    z-index: -2;
+
+    transition-delay: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.todo3 div::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+    border-color: rgb(255, 50, 110);
+    border-left-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    z-index: -1;
+
+    transition-duration: 0.5s;
+}
+
+.todo3:hover div::before {
+    transform: rotate(360deg);
+}
+
+.todo3:hover div::after {
+    transform: rotate(360deg);
+}

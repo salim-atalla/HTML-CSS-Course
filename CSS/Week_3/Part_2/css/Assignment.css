@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TODO: 1 */
+
+.todo1 div {
+
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+}
+
+
+.todo1 .green {
+    background-color: rgb(75, 168, 118);
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+.todo1 .red {
+    background-color: rgb(233, 81, 50);
+    z-index: 3;
+    top: 30px;
+    left: 30px;
+}
+
+.todo1 .blue {
+    top: 10px;
+    left: 10px;
+    background-color: rgb(79, 154, 229);
+    z-index: 1;
+}
+
+.todo1 .black {
+    background-color: rgb(46, 46, 46);
+    z-index: 0;
+    top: 20px;
+    left: 10px;
+}
+
+
+
+
+
+/* TODO: 2 */
+
+.todo2 div {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #eee;
+    border: 3px solid;
+    border-color: rgb(233, 81, 50) rgb(79, 154, 229);
+    position: relative;
+}
+
+.todo2 div span {
+    background-color: rgb(79, 154, 229);
+    padding: 3px 10px;
+    color: white;
+    position: absolute;
+}
+
+.todo2 .top-left {
+    border-right: 3px solid rgb(233, 81, 50);
+    top: -15px;
+    left: -15px;
+
+}
+
+.todo2 .top-right {
+    border-left: 3px solid rgb(233, 81, 50);
+    top: -15px;
+    right: -15px;
+}
+
+.todo2 .bottom-left {
+    border-right: 3px solid rgb(233, 81, 50);
+    bottom: -15px;
+    left: -15px;
+}
+
+.todo2 .bottom-right {
+    border-left: 3px solid rgb(233, 81, 50);
+    bottom: -15px;
+    right: -15px;
+}
+
+
+
+
+/* TODO: 3 */
+
+.todo3 .big-ul {
+    width: 400px;
+    margin: auto;
+    background-color: white;
+
+    list-style: none;
+    padding: 10px;
+}
+
+.todo3 .li1,
+.todo3 .li2,
+.todo3 .li3 {
+    background-color: #eee;
+    padding: 10px 10px 5px 10px;
+    margin: 15px 0;
+}
+
+.todo3 .l1,
+.todo3 .l2,
+.todo3 .l3 {
+    margin: 10px 0;
+    padding-left: 35px;
+}
+
+.todo3 .l2 {
+    list-style: upper-roman;
+}
+
+.todo3 .l3 {
+    padding: 0;
+}
+
+.todo3 .l1 li,
+.todo3 .l2 li,
+.todo3 .l3 li {
+    background-color: white;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.todo3 .l3 li {
+    list-style-position: inside;
+}
+
+
+
+
+/* TODO: 4 */
+
+.todo4 table {
+    background-color: white;
+    text-align: center;
+    width: 700px;
+    border-spacing: 1px;
+    margin: auto;
+}
+
+.todo4 table caption {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.todo4 table tbody td {
+    background-color: #eee;
+}
+
+.todo4 table thead {
+    color: white;
+    background-color: rgb(67, 66, 66);
+    font-weight: bold;
+
+}
+
+.todo4 table thead td {
+    padding: 15px 0px;
+}
+
+.todo4 table img {
+    width: 70px;
+    margin: 10px auto;
+    border: 3px solid white;
+    outline: 1px solid black;
+}
+
+.todo4 table button {
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.todo4 table .v {
+    background-color: rgb(20, 183, 237);
+}
+
+.todo4 table .d  {
+    background-color: rgb(255, 35, 100);
+}

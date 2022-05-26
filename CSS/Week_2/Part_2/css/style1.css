@@ -1,0 +1,33 @@
+
+
+
+div {
+    background-color: #f9f9f9;
+    /* color: rebeccapurple; */
+
+    /* 
+        test-shadow: H-Shadow V-Shadow Blur Color;
+    */
+    /* text-shadow: 1px 1px 3px red; */
+
+    /* the same in Microsoft Word => test-align: left (default) or center or right */
+    text-align: center;
+
+    /* direction: ltr (left to right) or rtl (right to left) */
+    /* 
+        Difference with text-align => 
+        text-align => position of the whole element without any changes
+        direction => direction of the elements
+
+        ex: the point at the end of "Elzero Web School.", if rtf => the point will be at the beginning.
+    */
+    direction: ltr;
+
+
+
+}
+
+div img {
+    /* vertical-align: top or middel or bottom */
+    vertical-align: middle;
+}

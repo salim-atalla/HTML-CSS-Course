@@ -1,0 +1,261 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* TODO: 1 */
+
+:root {
+    --orangeColor: #ff5100;
+}
+
+.todo1 h1 {
+    width: 150px;
+    margin: 50px auto;
+    padding: 10px 20px;
+
+    background-color: var(--orangeColor);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.todo1 h1::before {
+    content: "";
+    background-color: var(--orangeColor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    transform: skew(10deg, 10deg);
+}
+
+.todo1 h1::after {
+    content: "";
+    background-color: var(--orangeColor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    transform: skew(-10deg, -10deg);
+}
+
+
+/* ------------------------------------------ */
+/* TODO: 2 */
+
+:root {
+    --greenColor: #189891;
+}
+
+.todo2 h1 {
+    width: 150px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--greenColor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.todo2 h1::before {
+    content: "";
+    background-color: var(--greenColor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    transform: skewX(20deg);
+    z-index: -1;
+}
+
+.todo2 h1::after {
+    content: "";
+    background-color: var(--greenColor);
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    transform: skewX(20deg);
+    z-index: -1;
+}
+
+
+
+/* ------------------------------------------ */
+/* TODO: 3 */
+
+/* 
+    .class {
+            matrix(3, 0.2679, 0, 3, 20, 100);
+        <=>
+            transform: scaleX(3deg);
+            transform: skewY(0.2679deg);
+
+            transform: skewX(0deg);
+            transform: scaleY(3);
+
+            transform: translateX(20deg);
+            transform: translateY(100deg);
+    } 
+*/
+
+
+
+/* ------------------------------------------ */
+/* TODO: 4 */
+
+.todo4 div {
+    width: 270px;
+    height: 210px;
+    margin: 200px auto;
+    padding: 10px;
+    position: relative;
+}
+
+.todo4 div::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: black;
+    border-right: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+    transform: rotate(45deg);
+    top: -92px;
+    left: 52px;
+}
+
+.todo4 div::after {
+    content: "Elzero";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #618091;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-bottom: 5px solid black;
+}
+
+
+
+/* ------------------------------------------ */
+/* TODO: 5.1 */
+
+.todo5-1 div {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.todo5-1 div:hover {
+    transform: rotateY(-180deg);
+}
+
+.todo5-1 div::before {
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(234, 47, 100);
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backface-visibility: hidden;
+}
+
+.todo5-1 div::after {
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(27, 139, 213);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
+
+/* TODO: 5.2 */
+
+.todo5-2 div {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.todo5-2 div:hover {
+    transform: rotateX(-180deg);
+}
+
+.todo5-2 div::before {
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(234, 47, 100);
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backface-visibility: hidden;
+}
+
+.todo5-2 div::after {
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(27, 139, 213);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}

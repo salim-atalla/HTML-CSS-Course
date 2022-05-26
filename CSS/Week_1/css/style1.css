@@ -1,0 +1,44 @@
+
+
+div {
+
+    /* Color for the background */
+    background-color: red; /* Solid color */
+    background-color: rgb(255 0 0 / 50%); /* RGB system and Alpha channel in percent */
+    background-color: #FF0000; /* Hexa code */
+
+    /* Image for the background */
+    background-image: url("../imgs/img2.jpeg");
+
+    /* 
+        repeat is the default value (inverse: no-repeat, other values: repeat-x or repeat-y),
+        and it's mean to repeat the image in all direction if the content is bigger then the image 
+    */
+    background-repeat: no-repeat;
+
+    /* 
+        scroll is the default value (inverse: fixed),
+        and it's mean the the element is stuck in the background (scrole) or fixed on the screen move (fixed)
+    */
+    background-attachment: fixed;
+
+    /* 
+        The screen has 9 partitions: left top, left center, ... (keywords: left and right, top and bottom, center),
+        we can put the background in an area between these 9 places.
+        left top is the default value. (if the second value is missed, then it is center by default),
+        if we won't use left right ..., beacuse we need somthing more specify, the we use pixels,
+        So, the value will be,  ackground-position: Xpx Ypx;
+        ex: ackground-position: 20px 50px;
+        We can use also percent %, or other mesure units
+    */
+    background-position: left top;
+
+    /* 
+        auto is the default value (the real size of the picture),
+        cover => cover all area, can cut the image
+        contain => the image stretched but without cut up
+        we can use also pixels or percent or ... where the first value is for x (width) and the secone one is for y (height)
+    */
+    background-size: auto;
+}
+     

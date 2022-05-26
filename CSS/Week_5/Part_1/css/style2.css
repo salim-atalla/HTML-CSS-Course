@@ -1,0 +1,64 @@
+
+
+
+/* 
+    The !important Declaration
+        => Override on any thing 
+*/
+/* .one {
+    background-color: #eee !important;
+}
+
+.one {
+    background-color: blue;
+} */
+
+
+/* Margin collapse */
+/* 
+    [1] margin collapse => happen only vertically
+    [2] Bigger margin will be  applyed
+    [3] Margin collapse happen when there isn't any  elements in between
+    [4] Nesting hasn't any effects on margin collaps
+
+*/
+
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one {
+    background-color: #ddd;
+} 
+
+.two {
+    background-color: #aaa;
+}
+
+.up {
+    background-color: red;
+    color: white;
+    height: 90px;
+
+    margin-bottom: 20px;
+}
+
+.down {
+    background-color: green;
+    color: white;
+    height: 90px;
+
+    margin-top: 20px;
+}

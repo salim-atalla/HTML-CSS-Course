@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Part 1 content">
+    <title>Part 1</title>
+</head>
+<body>
+
+    <h1>Book Store</h1>
+
+    <!-- 
+        caption => Title of the table
+
+        thead
+        tbody
+        tfoot
+
+        tr => Table row
+        td => Table data cell
+        th => Table header cell
+
+        colspan="nb cells" (attribut) => merge cells (exemple below in tfoot).
+
+    -->
+    <table>
+        <caption>Students Marks</caption>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Salim</td>
+                <td>Atalla</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Salim</td>
+                <td>Atalla</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Salim</td>
+                <td>Atalla</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Salim</td>
+                <td>Atalla</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>200</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- ------------------------------------------------------------------- -->
+
+    <!-- 
+        span => isolate a part from the content to modify it in css
+        it dosn't modify anything to the part, but we will do the modification in css file.
+
+        br => new line (somthing like \n in programming languages).
+        hr => line
+    -->
+
+    <p>This is my <span>book store</span>, welcome!</p>
+    <hr>
+    <p>This is my book store, <br> welcome!</p>
+
+
+
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- 
+        div => division => container
+        it assemble elements not content
+    -->
+
+    <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, explicabo?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, similique placeat neque porro ea rerum voluptates animi,
+             magni aliquam, deleniti est hic dignissimos libero cumque explicabo eaque. Modi, libero quaerat.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt ducimus hic sed architecto, 
+            recusandae sint suscipit maxime. Dolor quis nemo nulla cumque sint deleniti magni veniam itaque optio autem.</p>
+    </div>
+
+    <hr>
+
+    <div class="police">
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="romantic">
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="fantasy">
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+        <div class="book">
+            <h3>Book title</h3>
+            <p>Book description</p>
+            <span>Price</span>
+        </div>
+    </div>
+
+    <hr>
+    <!-- ----------------------------------------------------------------- -->
+
+
+    <!-- 
+        to print somthing like <p> on the page, we cannot do it like <p> because it reserve by the language,
+            so, web have replacement,
+
+        we can write  & ... ; 
+        (where ... can be : lt for < 
+                         or gt for >
+                         ...etc.)
+            There is so much more entities for more symboles.
+    -->
+
+    <span> this is the tag of the paragraph &lt;p&gt;</span> 
+    
+</body>
+</html>

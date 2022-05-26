@@ -1,0 +1,54 @@
+/* 
+    display:
+
+    Block
+
+    -   Take full width if the width is not specified
+    -   Add line break <br> before an after the element
+    -   Respect: padding, margin, width, height
+    
+
+    Inline
+
+    -   Do not add line break <br>
+    -   Do not respect width, height, padding/margin-top, padding/margin-bottom
+    -   For padding/margin, respect just left and right
+    -   Allow elements before and after it
+
+
+    Inline-Block
+
+    -   Allow elements before and after it
+    -   Respect: padding, margin, width, height
+    -
+
+*/
+
+
+
+div {
+    background-color: #DDD;
+    padding: 10px;
+    margin: 10px; 
+    width: 300px;
+    height: 30px;
+}
+
+ 
+.i {
+    background-color: #DDD;
+    padding: 10px;
+    margin: 10px; 
+    width: 300px;
+    height: 30px;
+}
+
+.i-b {
+    background-color: #DDD;
+    display: inline-block;
+
+    padding: 10px;
+    margin: 10px; 
+    width: 300px;
+    height: 30px;
+}

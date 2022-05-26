@@ -1,0 +1,40 @@
+
+
+div {
+    background-color: #DDD;
+
+    /* 
+        Padding is the internal exta space of the element
+        padding take 4 values in order: Top Right Bottom Left
+        if we put just one value, then all the 4 values will have this value
+        if we put 2 values, then the first value will be for top and bottom, and the seconde one will be for left and right
+        We can also put 3 values and it will be the same for the same logic (3 values are: top right bottom right-value-for-left)
+
+        Important: if we need to change one dirction, then we can use: padding-top, padding-right, ...
+                    All values are positif for the padding.
+    */
+    padding: 10px;
+
+    /* 
+        Margin is the external exta space of the element
+        It has the same logic of the padding, but it has a difference, which is margin can have negatif values
+
+        In the case when we use width: 70% for exemple to the element in its container,
+        we can put the margin-left: auto and the margin-right: auto => the we will have the 30% left in the container are divided on the left and the right,
+        for ex: 
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        we can use also: 
+        margin: auto
+
+    */
+
+    /* margin: 10px; */
+
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}

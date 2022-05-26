@@ -1,0 +1,39 @@
+
+
+/* TODO: 1 */
+
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+/* .parent p {
+    color: green;
+}
+
+.title {
+    color: green;
+} */
+
+.title,
+.parent p {
+    color: green;
+}
+
+
+
+/* TODO: 2 */
+
+.t {
+    background-color: rgb(161, 45, 36);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+
+    width: fit-content;
+    max-width: 300px;
+    max-height: 40px;
+}

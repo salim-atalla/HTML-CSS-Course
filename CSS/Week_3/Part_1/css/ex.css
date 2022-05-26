@@ -1,0 +1,36 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    background-color: red;
+}
+
+
+.parent div div {
+    background-color: #eee;
+    text-align: center;
+
+    padding: 10px 0px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    width: calc((100% - 25px) / 4);
+    float: left;
+}
+
+
+.parent .l1 div {
+
+}
+
+.parent .l2 div {
+    margin-bottom: 5px;
+}
+
+
+.clear {
+    clear: both;
+}

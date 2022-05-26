@@ -1,0 +1,58 @@
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Assign1 {
+    text-shadow: 1px 1px 0px red, 2px 2px 0px rgb(107, 107, 238), 3px 3px 0px rgb(109, 38, 171);
+    font-size: 30px;
+}
+
+
+.Assign2 {
+    text-align: center;
+}
+
+.Assign2 .one {
+    text-transform: uppercase;
+}
+
+.Assign2 .two {
+    text-transform: capitalize;
+}
+
+.Assign2 .three {
+    text-transform: lowercase;
+}
+
+
+.Assign3 {
+
+    background-color: #DDD;
+    padding: 15px;
+    width: 400px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+div {
+    margin: auto;
+}
+
+.Assign4 {
+
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.Assign4 a {
+
+    background-color: rgb(22, 146, 128);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 5px solid rgb(24, 95, 70);
+}

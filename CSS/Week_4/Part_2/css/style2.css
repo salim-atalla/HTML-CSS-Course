@@ -1,0 +1,34 @@
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+    
+    box-sizing: content-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+
+    padding: 10px;
+    border: 10px solid red;
+
+    /* 
+        box-sizing: content;  => default value (take space for (margin, padding, border, ..) from the parent)
+        border-box => take space from the element it self
+
+        Important: we can add this properity to the " * {} ", to avoid adding it for each element.
+    */
+    /* box-sizing: border-box; */
+}

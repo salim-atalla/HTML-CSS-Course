@@ -1,0 +1,81 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* 
+    Grid
+*/
+/* 
+    Parent: 
+        -   display: grid | inline-grid;
+
+        -   grid-template-columns: ; => [Number of columns in] => [px, %, auto, fraction, repeat(), mix] (there is a function "repeat(nbColumns, property)")
+        -   grid-template-rows: ; => height of rows => [Number of rows height in] => [px, %, auto, fraction, repeat(), mix] ...
+        
+        -   row-gap: ;
+        -   column-gap: ;
+                Shorthand for gap => gap: row-gap column-gap;
+
+        -   justify-content: ; => same as flex
+        -   align-content: ; => same as flex
+
+        -   grid-template-areas: "" "" "" ...; => exemple in style2.css
+        
+    Child: 
+        -   grid-column: [grid-column-start] [grid-column-end] => where grid-column-end is exclue,
+                            ex: grid-column: 1 / 5; => columns: 1 2 3 4
+        -   grid-row: ... same logic of grid-column
+
+        -   grid-area: [grid-row-start] [grid-column-start] [grid-row-end] [grid-column-end]
+                        ex: grid-area: 2 / 2 / 5 / 6;
+
+        -   
+*/
+
+
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+
+    display: grid;
+    /* grid-template-columns: auto auto auto;  or repeat(3, auto) */
+    /* grid-template-columns: 100px repeat(3, 50px) 25% repeat(2, auto); */
+    /* grid-template-columns: 100px 100px 1fr 2fr; */
+    grid-template-columns: repeat(6, 1fr);
+
+    /* grid-template-rows: 100px 200px 100px; */
+    /* grid-template-rows: 20% 60% 20%; */
+    /* grid-template-rows: 200px auto 100px; */
+    /* grid-template-rows: 200px 1fr 1fr; */
+    /* grid-template-rows: repeat(3, auto);  */
+
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 10px 10px;
+
+    /* justify-content: space-between; */ /* Same with flex BUT => Doesn't work with fraction */
+    /* align-content: space-between; */ /* Same with flex BUT => Doesn't work with fraction */
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parent .one {
+    /* grid-column: 1 / 5; */
+    /* grid-column: span 4; */
+    /* grid-column: 2 / span 3; */
+
+    background-color: green;
+    grid-area: 2 / 2 / 5 / 6;
+}

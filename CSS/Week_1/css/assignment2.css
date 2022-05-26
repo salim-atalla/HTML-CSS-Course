@@ -1,0 +1,53 @@
+
+
+
+div {
+    background-color: #DDD;
+    display: inline-block;
+    border-width: 5px;
+    outline: 5px solid black;
+
+    margin: 20px;
+    padding: 20px;
+
+}
+
+
+.sh1 {
+    border: 5px solid red;
+}
+
+.sh2 {
+    border-style: solid;
+    border-color: blue green;
+}
+
+.sh3 {
+
+    border-style: dashed;
+    border-color: red green blue yellow;
+}
+
+
+.d1 {
+    display: block;
+    outline: 10px solid #DDD;
+    width: 400px;
+    border-left: 5px solid rgb(230, 80, 140);
+}
+
+.d2 {
+    display: block;
+    outline: 10px solid #DDD;
+    width: 400px;
+    visibility: hidden;
+
+}
+
+.d3 {
+    display: block;
+    outline: 10px solid #DDD;
+    width: 400px;
+    border-left: 5px solid rgb(35, 167, 112);
+
+}

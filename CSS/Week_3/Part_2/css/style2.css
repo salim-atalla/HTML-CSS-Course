@@ -1,0 +1,41 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    color: white;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    top: 30px;
+    left: 30px;
+
+    /* On top of all elements */
+    z-index: 3;
+}
+
+.two {
+    background-color: green;
+    top: 20px;
+    left: 20px;
+
+    /* on top of three */
+    z-index: 2;
+}
+
+.three {
+    background-color: blue;
+    top: 10px;
+    left: 10px;
+
+    /* in the bottom */
+    z-index: 1;
+}

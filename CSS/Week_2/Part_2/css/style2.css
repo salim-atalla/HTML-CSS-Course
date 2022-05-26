@@ -1,0 +1,34 @@
+
+
+
+div {
+    background-color: #f9f9f9;
+
+    /* 
+        text-decoration:  
+            line-through
+            underline
+            overline
+            ...
+
+        This properity => we use it mostly to delete the line under the link.
+    */
+    /* text-decoration: underline; */
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.trans {
+    /* 
+        text-transform:
+        capitalize => To make the first letter of each word in capital-letter
+        uppercase => all in capital-letter
+        lowercase => all in small-letter
+        ...
+    */
+    text-transform: uppercase;
+}

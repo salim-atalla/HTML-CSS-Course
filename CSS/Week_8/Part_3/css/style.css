@@ -1,0 +1,77 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+
+/* 
+    Media Queries
+    Responsive Design
+    -   Mobile First
+    -   Test Device
+*/
+
+/* 
+    Important: 
+        When we use min-width => each level we override on the changes,
+        If we want some changes only for som sort of screens, we can use a range between => min-width and max-width.
+        Ex: 
+
+        @media (min-width: 1000px) and (max-width: 1400px)  {
+            .class {
+                ...
+            }
+        } 
+*/
+
+/* Mobile */
+@media (max-width: 767px) { 
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+    .parent div {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+    .parent div {
+        width: calc(25% - 5px);
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    
+}
+
+/* Custom: all screens smaller then Large */
+@media (max-width: 1199px) {
+    
+}

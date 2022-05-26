@@ -1,0 +1,26 @@
+
+
+
+div {
+    background-color: #eee;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 6px;
+
+    /* 
+        overflow: 
+            visible (default)
+            hidden
+            scroll
+
+            auto (if need scroll => scroll else visible)
+
+
+            we have also: 
+                overflow-x and overflow-y
+                if we have a long string in width => to evoid the horizantal scroll,
+                we do => overflow-x: hidden; 
+    */
+    overflow: auto;
+}

@@ -1,0 +1,20 @@
+
+
+
+div {
+    background-color: #DDD;
+
+    width: 300px;
+    padding: 10px;
+
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: red; */
+    /* border: 10px solid red; */
+
+    /* border is a part from the element, and we can control the 4 direction */
+    border: 10px solid red; 
+
+    /* outline is not a part from the element, and we cannot control the 4 directions */
+    outline: 10px solid blue; 
+} 

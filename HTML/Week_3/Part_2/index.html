@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Part 2">
+        <title>Part 2</title>
+    </head>
+    <body>
+
+        <h1>Book Store</h1>
+        <p>This is my book store, Welcome!</p>
+        <br>
+        <hr>
+        <br>
+
+
+        <!-- 
+            More attributes for form:
+
+            novalidate
+            target => ex: target="_blank"
+        -->
+
+        <form action="" method="GET">
+
+            <div>
+                <div>
+                    <!-- Upload a file -->
+                    <label for="">Upload</label>
+                    <input type="file">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <!-- Search -->
+                    <label for="">Search</label>
+                    <input type="search">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <!-- URL -->
+                    <label for="">URL</label>
+                    <input type="url">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <!-- Date -->
+                    <label for="">Date</label>
+                    <input type="date">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <!-- Month -->
+                    <label for="">Month</label>
+                    <input type="month">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <!-- Time -->
+                    <label for="">Time</label>
+                    <input type="time">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Data List -->
+            <!-- Not a normal list (the select tag), but it's a list with searching capability -->
+            
+            <div>
+                <label for="programming">Programming langages</label>
+                <input list="programming" name="prog">
+
+                <datalist id="programming">
+                    <option value="Python">
+                    <option value="PHP">
+                    <option value="C#">
+                    <option value="C">
+                    <option value="C++">
+                    <option value="Scala">
+                </datalist>
+            </div>
+            
+            <br>
+            <br>
+            <div>
+                   <input type="reset" value="Reset">
+                   <input type="submit" value="Save">
+            </div>
+        </form>
+
+        <br>
+        <hr>
+        <hr>
+        <br>
+
+        <div>
+            <q>Book is a life written on paper</q>
+            <blockquote>Book is a life written on paper</blockquote>
+            <br>
+            <button>Click</button>
+
+            <!-- 
+                <wbr> => break a long string in some points
+                <bdi> => to isolate the writing direction (in the case when we write english with arabic for exemple)
+            -->
+            <div>
+                Lorem ipsum dolor,<wbr> sit amet consectetur adipisicing elit. <wbr>Beatae voluptatibus, placeat in pariatur adipisci labore alias sequi<wbr> fugit possimus non! Iure at atque sit obcaecati voluptates, dolore repellat accusantium! Doloremque voluptatibus consequatur veniam rem impedit repellat,<wbr> quia molestiae veritatis reprehenderit provident. Voluptatum optio ducimus labore non sed,<wbr> adipisci suscipit minus quibusdam vero, autem repudiandae excepturi ad cumque similique explicabo! Molestiae fugiat corporis quidem nemo<wbr> laudantium exercitationem obcaecati illum dolores sit.
+                <p>السلام 2 Welcome</p>
+                <p><bdi>السلام</bdi> 2 Welcome</p>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <hr>
+        <br>
+
+        <code>
+            var x = 10;
+            var y = 20;
+            console.log(x + y);
+        </code>
+
+        <p>
+            This is 
+                my
+                    new Line
+            can you
+                see 
+                        it
+        </p>
+
+        <pre>
+            This is 
+                my
+                    new Line
+            can you
+                see 
+                        it
+        </pre>
+
+        <pre>
+            <code>
+                var x = 10;
+                var y = 20;
+                console.log(x + y);
+            </code>
+        </pre>
+
+        <hr>
+        <br>
+        
+        <!-- iframe => get a website in your page, But, for somthing like this it is better to use API -->
+        <iframe src="https://elzero.org/html-assignments-lesson-from-31-to-34/" width="800" height="400"></iframe>
+
+        <br>
+        <br>
+        <br>
+
+
+        
+    </body>
+</html>

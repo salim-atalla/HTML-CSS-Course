@@ -1,0 +1,42 @@
+
+
+div {
+    background-color: #DDD;
+
+    /* Space between letters */
+    /* letter-spacing: 2px; */
+
+    /* Space in the begining of the line (same as "Tab" in keyboard), we us it for showing a code for exemple. */
+    /* text-indent: 30px; */
+
+    /* space between lines, 1 => 100% and 2 => 200% ... */
+    /* line-height: 1.5; */
+
+    /* Spacee between words */
+    /* word-spacing: 3px; */
+
+    /* normal by default */
+    /* white-space: nowrap; */
+
+
+    /* if we have a long word (like a link), we can do this propiries to avoid get a part from the word out the element */
+    /* width: 300px;
+    word-break: break-all or break-word; */
+
+
+
+
+    padding: 10px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    /* To show that the text is cutted up and there is a continu */
+    text-overflow: ellipsis;
+
+}
+
+
+div:hover {
+    overflow: visible;
+}

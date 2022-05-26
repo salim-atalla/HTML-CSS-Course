@@ -1,0 +1,71 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+    Grid Templet Areas => grid-template-areas: "" "" "" ...;
+*/
+
+.page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+
+    /* 10 column => to make sure we have 10 and only 10 (no less no more) we use 'fr' */
+    grid-template-columns: repeat(10, 1fr);
+
+    grid-template-rows: 50px auto 50px;
+
+    /* Make grid areas => for the first row: 2 columns for logo and 8 for nav bar*/
+    grid-template-areas: 
+                        "logo logo . nav nav nav nav nav nav nav" 
+                        "cont cont cont cont cont cont cont cont side side"
+                        "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+    grid-area: logo;
+
+    background-color: red;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+nav {
+    grid-area: nav;
+
+    background-color: blue;
+    color: white;
+}
+
+section {
+    grid-area: cont;
+
+    background-color: yellow;
+    color: white;
+}
+
+aside {
+    grid-area: side;
+
+    background-color: green;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+
+    background-color: black;
+    color: white;
+}

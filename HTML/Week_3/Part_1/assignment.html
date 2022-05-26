@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Assignment part 1">
+        <title>Assignment part 1</title>
+    </head>
+    <body>
+
+        <!-- TODO 1 -->
+        <form action="" method="">
+            <div>
+                <label for="username">Username</label>
+                <br>
+                <input id="username" name="username" type="text" min="5" max="20" autofocus required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input id="email" name="email" type="email" value="o@o.com" readonly>
+            </div>
+            <div>
+                <input id="token" name="token" type="hidden" value="b92f1fc2fce391ad7af633723afd3055">
+            </div>
+
+            <hr>
+
+            <!-- TODO 2 -->
+            <div>
+                <div>
+                    <input id="Planning" name="skills" type="checkbox" value="Planning" checked>
+                    <label for="Planning">Planning</label>
+                </div>
+                <div>
+                    <input id="Analysis" name="skills" type="checkbox" value="Analysis">
+                    <label for="Analysis">Analysis</label>
+                </div>
+                <div>
+                    <input id="AS" name="skills" type="checkbox" value="Advanced Search">
+                    <label for="AS">Advanced Search</label>
+                </div>
+                <div>
+                    <input id="LT" name="skills" type="checkbox" value="Logical Thinking">
+                    <label for="LT">Logical Thinking</label>
+                </div>
+                <div>
+                    <input id="PS" name="skills" type="checkbox" value="Problem Solving">
+                    <label for="PS">Problem Solving</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <div>
+                <div>
+                    <input id="SM" name="job" type="radio" value="Scrum Master" checked>
+                    <label for="SM">Scrum Master</label>
+                </div>
+                <div>
+                    <input id="PM" name="job" type="radio" value="Project Manager">
+                    <label for="PM">Project Manager</label>
+                </div>
+                <div>
+                    <input id="BA" name="job" type="radio" value="Business Analyst">
+                    <label for="BA">Business Analyst</label>
+                </div>
+                <div>
+                    <input id="BE-dev" name="job" type="radio" value="Back-End Developer">
+                    <label for="BE-dev">Back-End Developer</label>
+                </div>
+                <div>
+                    <input id="FE-dev" name="job" type="radio" value="Front-End Developer">
+                    <label for="FE-dev">Front-End Developer</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- TODO 3 -->
+            <div>
+                <label for="prog-list">Choose Book</label>
+                <select name="prog-list" id="prog-list">
+                    <optgroup label="PHP : ">
+                        <option value="5.0">v5.0</option>
+                        <option value="7.0">v7.0</option>
+                        <option value="8.0">v8.0</option>
+                    </optgroup>
+                    <optgroup label="Python : ">
+                        <option value="2.0">v2.0</option>
+                        <option value="3.0">v3.0</option>
+                        <option value="3.9">v3.9</option>
+                    </optgroup>
+                </select>
+            </div>
+
+        <hr>
+
+            <textarea name="brief" id="" cols="30" rows="10" placeholder="Write Here Why You Want To Learn Programming"></textarea>
+
+            <hr>
+
+            <div>
+                <input type="reset" value="Empty">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+
+        
+
+    </body>
+</html>

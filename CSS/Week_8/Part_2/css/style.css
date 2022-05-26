@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    Selectors Reference: Part 1 : 
+    =============================
+        Already know:
+        
+        -   Element => [p, div, h2, ...]
+        -   Element Other-Element => div p
+        -   .class-name
+        -   #id-name
+        -   .parent .child
+        -   .class-name div
+        -   .class-name div, .class-name p
+        ------------------------------------
+        New Selectors: 
+        
+        -   .class-one.class-two => an element has class-one AND class-two
+        -   Element.class-name => a specific element has class-name, ex: p.class-name => target all paragraphs which has class-name
+        -   .parent > .child => Direct child
+        =============================================
+
+    Selectors Reference: Part 2 :
+    =============================
+
+        -   Element + Other-Element (Next selector) => ex: [div + p] => we target a paragraph which has directly before it a div (at same lavel)
+        -   Element ~ Other-Elements (Next childs of the same parent) => ex: [p ~ div] => all div after a paragraph in the same parent
+        -   [Attribute] => ex: [title] => all elements which have an attribute "title"
+        -   Element[Attribute] => a specific element has a specific attribute => ex: div[title] => all div which has an attribute "title"
+        -   [Attribute=value] => Same logic ...
+        -   Element[Attribute=value] => Same logic ... => ex: input[type="submit"]
+        -   [Attribute~=value] => Contains a word => ex: if we have: <div title="Hello"></div> => selector will be: [title=~"Hello"] {...}
+        -   [Attribute*=value] => Contains a string (or sub-string)
+        -   [Attribute^=value] => Start with a string
+
+    Selectors Reference: Part 3 :
+    =============================
+
+        -   :first-child => ex: p:first-child => here we have 2 conditions => 1) the element is a paragraph, 2) this paragraph is the first child of his parent.
+        -   :last-child => Same logic => if the element is the last child for his parent
+        -   :first-of-type => ex: p:first-of-type => the first paragraph in a parent
+        -   :last-of-type => Same logic ...
+        -   :only-child => ex: p:only-child => a paragraph is the only child of his parent
+        -   :only-of-type => ex: p:only-of-type => a paragraph is the only paragraph-child of his parent
+
+    Selectors Reference: Part 4 :
+    =============================
+
+        -   :not(Selectors) => reverse of the selector => ex: p:not(:first-child) => all paragraphs if they are not the first child
+        -   :nth-child(n) => ex: p:nth-child(2) => a paragraph is the second child for his parent
+                            Another ex: p:nth-child(even) => even numbers, p:nth-child(odd) => odd numbers, ...
+                            Also: we can do a range, ...
+        -   :nth-last-child(n) => counting from the last to the begining
+        -   :nth-of-type(n) => Same logic ...
+        -   :nth-last-of-type(n) => Same logic ...
+
+    Selectors Reference: Part 5 :
+    =============================
+
+        -   :root 
+        -   :checked
+        -   :empty
+        -   :disabled
+        -   :required
+        -   :focus
+        -   ::selection
+        -   ::placeholder
+        -   ...
+*/

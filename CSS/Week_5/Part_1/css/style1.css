@@ -1,0 +1,52 @@
+
+/* 
+    Transition:
+        
+        -   Duration
+        -   Property
+        -   Delay
+        -   Timing Function
+
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+
+    /* transition-duration: 1s;
+    transition-delay: 0.2s; */
+    /* transition-property: margin-left, margin-top; */ /* all => default value */
+    /* transition-property: width; */
+
+    /*
+        ease => default value: slow fast slow 
+        ease-in => start slow
+        ease-out => finish slow
+        ease-in-out => start slow and finish slow
+        linear => same speed
+    */
+    /* transition-timing-function: linear;  */
+
+    /* SHORT HAND FOR TRANSITION */
+    /* 
+        transition (with 2 values): property | duration 
+        transition (with 4 values (all values)): property | duration | delay | transition-timing-function
+    */
+    /* transition: width 2s, height 1s; */
+    transition: all 0.5s 2s linear;
+}
+
+.one:hover {
+    /* margin-left: 20px;
+    margin-top: 20px; */
+    width: 280px;
+    height: 120px;
+}

@@ -1,0 +1,295 @@
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* TODO: 1 */
+
+.todo1 div {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+
+    background-color: #eee;
+    color: rgb(255, 100, 0);
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 5px 0px 0px 0px rgb(255, 100, 0),
+                -5px 0 0 0 rgb(0, 200, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------ */
+/* TODO: 2 */
+
+.todo2 .parent {
+
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 10px;
+
+    background-color: #eee;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.todo2 .parent div {
+
+    background-color: rgb(255, 60, 0);
+    color: white;
+    width: calc(95% / 3);
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ------------------------------------------------ */
+/* TODO: 3 */
+
+.todo3 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 10px;
+
+    background-color: #eee;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.todo3 .parent div {
+
+    background-color: rgb(87, 119, 134);
+    color: white;
+    width: calc(95% / 3);
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo3 .parent .one {
+    order: 6;
+    align-self: flex-end;
+}
+
+.todo3 .parent .two {
+    order: 5;
+}
+
+.todo3 .parent .three {
+    order: 2;
+    align-self: flex-start;
+}
+
+.todo3 .parent .four {
+    order: 3;
+}
+
+.todo3 .parent .five {
+    order: 4;
+}
+
+.todo3 .parent .six {
+    order: 1;
+}
+
+/* ------------------------------------------------ */
+/* TODO: 4 */
+
+.todo4 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todo4 .parent div {
+    background-color: rgb(0, 150, 125);
+    color: white;
+    height: calc(80% / 3);
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo4 .parent .one,
+.todo4 .parent .three {
+    align-self: flex-end;
+}
+
+.todo4 .parent .two {
+    align-self: flex-start;
+    width: 50%;
+}
+
+
+/* ------------------------------------------------ */
+/* TODO: 5 */
+
+.todo5 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #eee;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.todo5 .parent div {
+
+    color: white;
+    width: calc(70% / 4);
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo5 .parent .one {
+    background-color: rgb(255, 150, 0);
+    order: 2;
+}
+
+.todo5 .parent .two {
+    background-color: rgb(140, 196, 89);
+    order: 3;
+    align-self: flex-end;
+}
+
+.todo5 .parent .three {
+    background-color: rgb(111, 77, 55);
+    order: 4;
+}
+
+.todo5 .parent .four {
+    background-color: rgb(103, 70, 169);
+    order: 1;
+    align-self: flex-end;
+}
+
+
+
+/* ------------------------------------------------ */
+/* TODO: 6 */
+
+:root {
+    --backGroundColorElement: #ddd;
+    --mainPadding: 10px;
+    --mainMargin: 10px;
+}
+
+.todo6 .page {
+    background-color: #eee;
+    width: 700px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 0 var(--mainPadding, 10px);
+    font-size: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.todo6 .page .header {
+    width: 100%;
+}
+
+.todo6 .page .header .logo {
+    background-color: var(--backGroundColorElement, #ddd);
+    padding: var(--mainPadding, 10px) 20px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.todo6 .page .header .links {
+    list-style: none;
+    background-color: var(--backGroundColorElement, #ddd);
+
+    padding: var(--mainPadding, 10px);
+    width: calc(100% - 81px);
+    margin-left: var(--mainMargin, 10px);
+
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
+
+.todo6 .page .header .links li {
+    margin-left: var(--mainMargin, 10px);
+}
+
+.todo6 .page .main-area {
+    width: 100%;
+}
+
+.todo6 .page .main-area .content {
+    background-color: var(--backGroundColorElement, #ddd);
+    padding: var(--mainPadding, 10px);
+    display: inline-block;
+    width: calc(65% - 15px);
+    height: 190px;
+}
+
+.todo6 .page .main-area .sidebar {
+    background-color: var(--backGroundColorElement, #ddd);
+    padding: var(--mainPadding, 10px);
+    display: inline-block;
+    width: 35%;
+    margin-left: 10px;
+    height: 190px;
+
+}
+
+.todo6 .page .footer {
+    width: 100%;
+    margin-top: var(--mainMargin, 10px);
+    padding: var(--mainPadding, 10px);
+    background-color: var(--backGroundColorElement, #ddd);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.todo6 .page .footer .copyright {
+}
+
+.todo6 .page .footer .design {
+}

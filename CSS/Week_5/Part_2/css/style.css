@@ -1,0 +1,140 @@
+
+/* 
+    Flexible Box:
+        For Parent (flex box):
+            -   display: flex; => to say that this box is a flex box
+            -   flex-direction: row; => default value (with the direction of the page language - rtl or ltr),
+                            other values: row-reverse (reverse of the page langage) - column (same as row but put in column) - column-reverse (reverse of column)
+            -   flex-wrap: nowrap; => default value (modify the width to containe all div in the row dynameclly (in case if the total width of the div's are more then the width of the parent)),
+                            other values: wrap (inverse of nowrap => if there is a div more the => put in the next row) - wrap-reverse
+                Shorthand to (flex-direction and flex-wrap):
+                    -   flex-flow: flex-direction | flex-wrap;
+            ---------
+            -   justify-content: flex-start => default value, Other values: flex-end - center,
+                                    Other group of values: space-between - space-around - space-evenly
+
+            -   align-items: (similar to justify-content But Vertically), stretch => the default value,
+                            other values: [flex-start - flex-end - center] => (alignment vertically)
+        
+            -   align-content: stretch; => default value, (same as align-items But its effect for all content)
+                            other values: same.
+ 
+        For Childs: 
+            -   flex-grow: 0; => default value, 
+            -   flex-shrink: 1; => default value,
+            -   order: 0; => default value, => order of elements in the flex box
+
+            -   flex-basis: auto; => default value, (property same as width but it have some advantge) => we can use it only in a flex box!
+                                diiferents with the normal width => it have effects not only for the width but also for the height (depend on the flex-direction (row or column)),
+                                flex-basis respect the max-width
+                
+            Shorthand: 
+                -   flex: [flex-grow] [flex-shrink] [flex-basis];
+                        Default values => flex: 0 1 auto;
+
+            -----------
+            -   align-self: auto; => default value, 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    /* overflow: hidden; => We don't need it for flex */
+    /* display: flex; */
+    display: inline-flex;
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start;
+    align-content: flex-start; */
+
+
+    background-color: #eee; 
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+
+    /* flex-direction: column; */
+    align-items: flex-start;
+
+    height: 300px;
+}
+
+
+.flex div {
+    /* float: left; => We don't need it for flex */
+
+    background-color: red;
+    color: white;
+    width: 80px;
+    text-align: center;
+    padding: 20px;
+    margin-right: 5px;
+
+    /* flex-grow: 1; */
+}
+
+.flex .three {
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+    /* flex-basis: 300px; */
+
+    align-self: flex-end;
+}
+
+/* .in { */
+    /* display: inline-block; */
+    /* 
+        if we need to display this element beside of our flex box,
+        we change display: flex; to display:inline-flex; for the flexbox.
+    */
+/* } */
+
+/* .float {
+    overflow: hidden;
+
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.float div {
+    float: left;
+
+    background-color: red;
+    color: white;
+    width: calc(98% / 3);
+    text-align: center;
+    padding: 20px;
+}
+
+.float .two {
+    margin-left: 1%;
+    margin-right: 1%;
+} */
+
+/* .center {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 200px; */
+
+    /* Center the string "Center" in the middle using flex */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+    /* Center the string "Center" in the middle without flex
+        But this way have several problems which to avoid them we put the string "Center" in a span and then we use position ...
+        So, this is not pratical at all!
+    */
+    /* text-align: center;
+    line-height: 200px; */
+/* }    */

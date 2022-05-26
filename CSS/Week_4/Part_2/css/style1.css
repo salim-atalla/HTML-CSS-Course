@@ -1,0 +1,44 @@
+
+
+
+div {
+
+    /* For border radius */
+
+    /* width: 100px;
+    height: 100px; */
+    /* background-color: rgb(205, 204, 204);
+    margin: 20px auto; */
+
+    /* border-radius: 10px; */
+    /* border-radius: 50%; */
+    /* border-radius: 20px 0; */
+
+    /* border-top-left-radius: 20px 50px; */
+
+    /* width: 200px;
+    height: 50px; */
+    /* border-radius: 50px 10px 10px 50px; */
+    /* border-radius: 50px 10px; */
+
+    /* ---------------------------------------- */
+
+    /* For Box shadow */
+
+    /* 
+        box-shadow: H-Shadow | V-Shadow | Blur | Spread | Color | Inset;
+
+        Spread => prevalence rate 
+        Inset => Internal or external shadow ( | inset)
+    */
+
+    background-color: rgb(205, 204, 204);
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+
+    /* We can do more then one shadow at time */
+    box-shadow: 2px 2px 7px 1px rgba(77, 77, 77, 0.5),
+                0px 0px 30px 0px rgba(255, 74, 74, 0.5) inset;
+
+} 

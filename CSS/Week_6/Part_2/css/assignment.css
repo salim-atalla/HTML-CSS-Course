@@ -1,0 +1,340 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* TODO: 1 */
+
+.todo1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 7fr;
+
+    gap: 20px 20px;
+}
+
+.todo1 .grid div {
+
+    background-color: rgb(75, 115, 125);
+    counter-increment: elem;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.todo1 .grid div::before {
+    content: "Element " counter(elem);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* --------------------------------------------------- */
+/* TODO: 2 */
+
+
+:root {
+    --mainPadding: 17px;
+}
+
+.todo2 .layout {
+    background-color: #eee;
+    color: white;
+    font-size: 12px;
+    height: 60vh;
+    width: 800px;
+    margin: auto;
+
+    display: grid;
+    
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: 
+                        "head head head head head head head head"
+                        "section section section section section section aside aside"
+                        "footer footer footer footer footer footer footer footer";
+}
+
+
+.todo2 .layout header {
+    background-color: rgb(0, 179, 255);
+    grid-area: head;
+    padding: var(--mainPadding);
+}
+
+.todo2 .layout header::before {
+    content: "Header";
+}
+
+.todo2 .layout section {
+    background-color: rgb(252, 87, 27);
+    grid-area: section;
+    padding: var(--mainPadding);
+}
+
+.todo2 .layout section::before {
+    content: "Section";
+}
+
+.todo2 .layout aside {
+    background-color: rgb(67, 115, 125);
+    grid-area: aside;
+    padding: var(--mainPadding);
+
+}
+
+.todo2 .layout aside::before {
+    content: "Aside";
+}
+
+.todo2 .layout footer {
+    background-color: rgb(65, 150, 145);
+    grid-area: footer;
+    padding: var(--mainPadding);
+
+}
+
+.todo2 .layout footer::before {
+    content: "Footer";
+}
+
+
+
+/* --------------------------------------------------- */
+/* TODO: 3 */
+
+.todo3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+
+    margin: auto;
+    display: grid;
+    gap: 20px 20px;
+
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+}
+
+.todo3 .grid div {
+    background-color: rgb(60, 59, 57);
+    color: white;
+    font-weight: bold;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+/* --------------------------------------------------- */
+/* TODO: 4 */
+
+.todo4 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    gap: 20px 20px;
+}
+
+.todo4 .grid div {
+    background-color: rgb(0, 157, 255);
+    color: white;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.todo4 .grid .one {
+    order: 8;
+    grid-column: 1 / span 3;
+}
+
+.todo4 .grid .two {
+    grid-column: 1 / span 2;
+}
+
+.todo4 .grid .five {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 3;
+}
+
+.todo4 .grid .eight {
+    order: -1;
+    grid-column: 1 / span 3;
+}
+
+
+
+/* --------------------------------------------------- */
+/* TODO: 5 */
+
+.todo5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    align-content: space-between;
+    gap: 20px 20px;
+}
+
+.todo5 .grid div {
+    background-color: rgb(209, 39, 87);
+    color: white;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+/* --------------------------------------------------- */
+/* TODO: 6 */
+
+:root {
+    --ParaPadding: 15px;
+}
+
+.todo6 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 850px;
+    height: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    line-height: 15px;
+}
+
+.todo6 .grid .para {
+    background-color: white;
+    padding: var(--ParaPadding);
+    border-bottom: 2px solid rgb(255, 68, 0);
+
+    position: relative;
+}
+
+.todo6 .grid .para::after {
+    content: "\"";
+    font-size: 40px;
+    color: #ccc;
+
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    transform: rotate(10deg);
+}
+
+.todo6 .grid .para .name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.todo6 .grid .para .pro {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+.todo6 .grid .para .p1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.todo6 .grid .para .p2 {
+    font-size: 10px;
+}
+
+.todo6 .grid .one {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.todo6 .grid .two {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 3;
+}
+
+.todo6 .grid .three {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 11;
+
+    background-color: black;
+    color: white;
+}
+
+.todo6 .grid .four {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 8;
+}
+
+.todo6 .grid .five {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 4;
+
+    background-color: black;
+    color: white;
+}
+
+.todo6 .grid .six {
+    grid-column: 2 / span 2;
+    grid-row: 8 / span 4;
+}
+
+.todo6 .grid .seven {
+    grid-column: 1 / span 1;
+    grid-row: 12 / span 3;
+}
+
+.todo6 .grid .eight {
+    grid-column: 2 / span 1;
+    grid-row: 12 / span 3;
+
+    background-color: black;
+    color: white;
+}
+
+.todo6 .grid .nine {
+    grid-column: 3 / span 1;
+    grid-row: 12 / span 3;
+}
+
+.todo6 .grid .ten {
+    grid-column: 4 / span 1;
+    grid-row: 12 / span 3;
+}
+
+

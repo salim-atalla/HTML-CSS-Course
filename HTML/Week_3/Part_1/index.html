@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Part 1">
+        <title>Part 1</title>
+    </head>
+    <body>
+        
+        <div>
+            <h1>Book Store</h1>
+            <p>This is my book store, Welcome!</p>
+        </div>
+    
+        <form action="" method="GET">
+
+            <!-- 
+                Attributs
+
+                readonly => can't change but send
+                disabeled => can't change and not send
+
+                autofocus
+
+                minlength => minimun number of caracters (for password for exemple)
+                maxlength => maximum number of caracters
+            -->
+            <div>
+                <label for="">Username</label>
+                <input 
+                    type="text" 
+                    name="username" 
+                    placeholder="Username" 
+                    value="salim" 
+                    readonly 
+                    required
+                >
+            </div>
+            <br>
+            <div>
+                <label for="">Email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Email" 
+                    value="sa@gmail.com" 
+                    disabled 
+                    required
+                >
+            </div>
+            <br>
+            <div>
+                <label for="">Password</label>
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Password" 
+                    minlength="8" 
+                    autofocus 
+                    required
+                >
+            </div>
+            
+            <br>
+            <hr>
+            <hr>
+            <br>
+
+            <!-- Other input types -->
+            <div>
+                <label for="">Color</label>
+                <input type="color" name="color">
+            </div>
+            <br>        
+            <div>
+                <label for="">Number</label>
+                <input 
+                    type="number" 
+                    name="number" 
+                    min="0" 
+                    max="100" 
+                    step="10" 
+                    value="0"
+                >
+            </div>
+            <br>
+            <div>
+                <label for="">Range</label>
+                <input 
+                    type="range" 
+                    name="range" 
+                    min="0" 
+                    max="100" 
+                    step="10" 
+                    value="0"
+                >
+            </div>
+
+            <br>
+            <hr>
+            <hr>
+            <br>
+
+            <div>
+                <div>
+                    <input 
+                        id="windows-os"
+                        type="radio" 
+                        name="os" 
+                        value="windows" 
+                        checked
+                    >
+                    <label for="windows-os">Windows</label>
+                </div>
+                <div>
+                    <input 
+                        id="mac-os"
+                        type="radio" 
+                        name="os" 
+                        value="mac"
+                    >
+                    <label for="mac-os">Mac</label>
+                </div>
+                <div>
+                    <input 
+                        id="linux-os"
+                        type="radio" 
+                        name="os" 
+                        value="linux"
+                    >
+                    <label for="linux-os">Linux</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <div>
+                <div>
+                    <input 
+                        id="windows-os-ch"
+                        type="checkbox" 
+                        name="os" 
+                        value="windows" 
+                        checked
+                    >
+                    <label for="windows-os-ch">Windows</label>
+                </div>
+                <div>
+                    <input 
+                        id="mac-os-ch"
+                        type="checkbox" 
+                        name="os" 
+                        value="mac"
+                    >
+                    <label for="mac-os-ch">Mac</label>
+                </div>
+                <div>
+                    <input 
+                        id="linux-os-ch"
+                        type="checkbox" 
+                        name="os" 
+                        value="linux"
+                    >
+                    <label for="linux-os-ch">Linux</label>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <hr>
+            <br>   
+            
+            <div>
+                <label for="book">Choose Book :</label>
+                <select name="book" id="book">
+                    <!-- 
+                        attribut value here => the value send to backend,
+                        and the text is the choice
+                    -->
+                    <optgroup label="Romantic books : ">
+                        <option value="1">Book 1</option>
+                        <option value="2">Book 2</option>
+                        <option value="3" selected>Book 3</option>
+                    </optgroup>
+                    <optgroup label="Police books : ">
+                        <option value="4">Book 4</option>
+                        <option value="5">Book 5</option>
+                        <option value="6">Book 6</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <hr>
+
+            <textarea name="subject" id="sub" cols="30" rows="5" placeholder="Text area"></textarea>
+
+            <br>
+            <hr>
+            <hr>
+            <br>  
+
+
+            <div>
+                <input type="submit" value="Send">
+                <input type="hidden">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+
+    </body>
+</html>

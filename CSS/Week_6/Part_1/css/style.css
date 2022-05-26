@@ -1,0 +1,85 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Filters */
+
+.filters img {
+    width: 500px;
+    margin: 50px 100px;
+
+    transition: 0.3s;
+    /* filter: grayscale(100%); */
+    /* filter: blur(3px); */
+    /* filter: invert(100%); */
+    filter: invert(50%);
+}
+
+img:hover {
+    /* filter: grayscale(0); */
+    /* filter: blur(0); */
+    filter: invert(0);
+}
+
+
+/* ----------------------------------- */
+/* Gradients */
+/* 
+    linear-gradient(Direction or Angle, Color stop 1 | space in % or px, Color stop 2, ...);
+*/
+
+.grad {
+    width: 400px;
+    height: 200px;
+    /* 
+        Angle => we can use the unit "deg" 
+        Direction => "to top (0deg or 360deg), to right (90deg), to bottom (180deg), to left (270deg)"
+    */
+    /* background-image: linear-gradient(to right, red 300px, green, blue); */
+
+    background-color: #eee;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+}
+
+.grad::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+
+    background-image: linear-gradient(
+        to right,         /* Direction */
+        #2980b9 20%,    /* stop point */
+        #27ae60 20%,    /* start point */
+        #27ae60 40%,    /* stop point */
+        #d35400 40%,    /* start point */
+        #d35400 60%,    /* stop point */
+        #8e44ad 60%,    /* start point */
+        #8e44ad 80%,    /* stop point */
+        #c0392b 80%     /* start point */
+    );
+}
+
+
+/* ----------------------------------- */
+/* 
+    Caret Color
+    Pointer Event
+*/
+
+.cc p {
+    caret-color: red;
+}
+
+a {
+    pointer-events: none;
+}

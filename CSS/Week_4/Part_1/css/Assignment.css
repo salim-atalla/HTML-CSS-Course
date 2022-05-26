@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* TODO: 1 */
+
+.todo1 div {
+    background-color: #eee;
+    width: 300px;
+    font-size: 17.33px;
+    padding: 20px 0;
+    margin: 20px auto;
+    text-align: center;    
+}
+
+.todo1 div:empty {
+    background-color: red;
+    padding: 0;
+    height: 60px;
+}
+
+/* -------------------------------------------- */
+
+/* TODO: 2 */
+
+.todo2 div {
+    background-color: rgb(205, 205, 205);
+    font-size: 20px;
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+}
+
+.todo2 div::first-letter {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 20px 15px;
+    margin-right: 20px;
+    margin-left: -50px;
+}
+
+
+/* -------------------------------------------- */
+
+/* TODO: 3 */
+
+.todo3 p {
+    background-color: #eee;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+
+    position: relative;
+
+    border-left: 5px solid rgb(255, 0, 100);
+}
+
+.todo3 p::before {
+    content: attr(data-person);
+    background-color: rgb(213, 213, 213);
+    width: 60px;
+    padding: 15px;
+    text-align: center;
+
+    position: absolute;
+    top: 5px;
+    left: -126px;
+}
+
+.todo3 p::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+
+    position: absolute;
+    top: 15px;
+    left: -32px;
+
+    border: 15px solid;
+    border-color: transparent rgb(255, 0, 100) transparent transparent;
+}
+
+
+/* -------------------------------------------- */
+
+/* TODO: 4 */
+
+.todo4 p {
+    background-color: rgb(218, 218, 218);
+    width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+
+    counter-increment: count;
+
+    position: relative;
+}
+
+
+.todo4 p::after {
+    content: "";
+    background-color: rgb(250, 60, 30);
+    width: 5px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.todo4 p::before {
+    content: counter(count);
+    background-color: rgb(250, 60, 30);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 58.33px;
+    height: calc(100% - 40px);
+
+    padding: 20px 0;
+
+    position: absolute;
+    top: 0;
+    left: -55px;
+}

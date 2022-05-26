@@ -1,0 +1,25 @@
+
+
+div {
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+
+    width: 400px;
+    height: 40px;
+    /* 
+        There is also
+        min-width and max-width
+        to make a range for the width.
+        Same thing for height
+    */
+
+    /* 
+        width: fit-content;
+
+        To make the size of the block the same size of the content.
+        We don't use inline-block for these cases, and the raison is
+            that we keep display: block; and we control the width at the same time.
+    */
+    width: fit-content;
+}

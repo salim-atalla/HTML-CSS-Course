@@ -1,0 +1,21 @@
+
+
+
+div {
+    background-color: red;
+    margin: 10px 0px;
+
+    /* 
+        To disapeare an element, we have two choices:
+            display: none;  
+            or
+            visibility: hidden;
+
+        what the difference?
+            display => element disapeare with its space
+            visibility => element don't disapeare, but it will be just hidden, so its space still
+    */
+
+
+
+} 

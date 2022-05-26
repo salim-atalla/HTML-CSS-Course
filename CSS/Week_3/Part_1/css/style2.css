@@ -1,0 +1,37 @@
+
+/* Calc */
+
+body {
+    margin: 0;
+}
+
+
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+
+    float: left;
+    /* width: 23.75%; */
+    width: calc(95% / 4);
+    margin-left: 1%;
+}
+
+/* 
+    we have 100% width, each space is 1% => 5% total spaces,
+    we have left 95% and we have 4 elements => 95% / 4 = 23.75% for each element.
+    each element have the space at its left => margin-left: 1%;
+
+    to do the calculation, we have a function named calc(exp), as the exemple above.
+*/
+
+/* 
+    Another exemlpe for calc():
+
+    if we need to make each space 10px in place of 1%,
+    then what we will do is:
+        we have 100% width, each space is 10px => 10px * 5 spaces for 4 elements = 50px,
+        => calc((100% - 50px) / 4) is the width for each element.
+
+*/

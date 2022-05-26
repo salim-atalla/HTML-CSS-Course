@@ -1,0 +1,16 @@
+
+
+
+/* 
+    Alpha-channel is for oopacity to the color which has been used.
+    opacity: 1; => is for all elements, where the value 1 is 100% color, so 1 => no opacity.
+*/
+
+.one {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.two {
+    background-color: rgba(255 0 0 / 50%);
+} 
